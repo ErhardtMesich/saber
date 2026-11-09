@@ -1,0 +1,31 @@
+{
+  "source": {
+    "source": "https://github.com/deiluca/robust_monitoring_organoid_growth/blob/9334db92c59e381afd843fca0338ea78bffd14e2/df_pred.csv",
+    "dataset_doi": "10.5281/zenodo.10301912",
+    "article_doi": "10.1038/s41597-024-03330-z",
+    "repository_commit": "9334db92c59e381afd843fca0338ea78bffd14e2",
+    "github_blob_sha1": "d6017afd6134c6c993bbe607f542fbeaae4518a6",
+    "sha256": "472a9da6e5d2eab5081690aab987b1c41847e16721d3f79b6fbec6144f5e33dd",
+    "bytes": 1471825,
+    "license": "CC BY 4.0 dataset; repository MIT"
+  },
+  "cohort": "Four brain organoids, one from each clone, Lab A",
+  "train_days": [
+    2,
+    5,
+    8,
+    10,
+    16,
+    19,
+    22,
+    25
+  ],
+  "test_day": 30,
+  "n_organoids": 4,
+  "n_training_observations": 32,
+  "method": "Per-organoid ordinary least-squares linear fit to annotated area vs day; extrapolate to day 30",
+  "comparator": "Last observed (day 25) area",
+  "linear_mae_um2": 873599.965759559,
+  "last_observation_mae_um2": 887723.3215830794,
+  "limitations": "Four hand-selected brain organoids; annotation-derived area, not raw images. This is a small descriptive held-out-timepoint experiment, not liver cancer, drug response, closed-loop policy evaluation, or replication of paper results."
+}
